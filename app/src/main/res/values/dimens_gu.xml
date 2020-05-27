@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--字号大小，使用sp，能够根据系统设置的字号大小改变而改变-->
+    <dimen name="text_size_level_10">10sp</dimen>
+    <dimen name="text_size_level_12">12sp</dimen>
+    <dimen name="text_size_level_14">14sp</dimen>
+    <dimen name="text_size_level_16">16sp</dimen>
+    <dimen name="text_size_level_18">18sp</dimen>
+    <dimen name="text_size_level_20">20sp</dimen>
+    <dimen name="text_size_level_22">22sp</dimen>
+    <dimen name="text_size_level_24">24sp</dimen>
+    <dimen name="text_size_level_26">26sp</dimen>
+    <dimen name="text_size_level_28">28sp</dimen>
+    <!--空白大小-->
+    <dimen name="margin_size_level_5">5sp</dimen>
+    <dimen name="margin_size_level_10">10sp</dimen>
+    <dimen name="margin_size_level_15">15sp</dimen>
+    <dimen name="margin_size_level_20">20sp</dimen>
+    <dimen name="margin_size_level_25">25sp</dimen>
+    <dimen name="margin_size_level_30">30sp</dimen>
+    <dimen name="margin_size_level_35">35sp</dimen>
+    <dimen name="margin_size_level_40">40sp</dimen>
+    <dimen name="margin_size_level_45">45sp</dimen>
+    <dimen name="margin_size_level_50">50sp</dimen>
+    <!--圆角-->
+    <dimen name="radius_level_2">2dp</dimen>
+    <dimen name="radius_level_4">4dp</dimen>
+    <dimen name="radius_level_6">6dp</dimen>
+    <dimen name="radius_level_8">8dp</dimen>
+    <dimen name="radius_level_10">10dp</dimen>
+</resources>

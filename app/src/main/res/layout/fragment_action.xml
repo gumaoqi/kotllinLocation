@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gu_linearLayout_root_vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_action_rv"
+        style="@style/gu_recycler"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

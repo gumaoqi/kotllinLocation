@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gu_linearLayout_root_vertical">
+
+    <ImageView style="@style/gu_imageView_weight_vertical" />
+
+    <ImageView
+        style="@style/gu_imageView_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher_round" />
+
+    <ImageView style="@style/gu_imageView_weight_vertical" />
+
+    <EditText
+        android:text=""
+        android:id="@+id/fragment_login_phone_et"
+        style="@style/gu_editText_weight"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_size_level_30"
+        android:layout_marginRight="@dimen/margin_size_level_30"
+        android:layout_weight="0"
+        android:digits="0123456789"
+        android:hint="@string/gu_input_phone"
+        android:maxLength="11" />
+
+
+    <EditText
+        android:text=""
+        android:id="@+id/fragment_login_password_et"
+        style="@style/gu_editText_weight"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_size_level_30"
+        android:layout_marginRight="@dimen/margin_size_level_30"
+        android:layout_weight="0"
+        android:hint="@string/gu_input_password"
+        android:inputType="textPassword"
+        android:maxLength="18" />
+
+
+    <TextView
+        android:id="@+id/fragment_login_find_password_tv"
+        style="@style/gu_textView_center"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_size_level_30"
+        android:text="@string/gu_find_password"
+        android:textColor="@color/gu_gray" />
+
+    <ImageView style="@style/gu_imageView_weight_vertical" />
+
+    <LinearLayout
+        style="@style/gu_linearLayout_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_size_level_30"
+        android:layout_marginRight="@dimen/margin_size_level_30">
+
+        <Button
+            android:id="@+id/fragment_login_register_bt"
+            style="@style/gu_button_wrap_content"
+            android:text="@string/gu_register" />
+
+        <ImageView style="@style/gu_imageView_weight_horizontal" />
+
+        <Button
+            android:id="@+id/fragment_login_login_bt"
+            style="@style/gu_button_wrap_content"
+            android:text="@string/gu_login_new" />
+    </LinearLayout>
+
+    <ImageView style="@style/gu_imageView_weight_vertical" />
+</LinearLayout>

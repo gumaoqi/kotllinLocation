@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gu_linearLayout_root_vertical">
+
+    <LinearLayout
+        style="@style/gu_linearLayout_horizontal"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/fragment_dis_sp"
+            style="@style/gu_spinner_weight"></Spinner>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_dis_tv"
+        style="@style/gu_textView_center"
+        android:layout_width="match_parent"
+        android:gravity="left" />
+
+    <ImageView style="@style/gu_recycler_headline_no_margin_horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_dis_rv"
+        style="@style/gu_recycler"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

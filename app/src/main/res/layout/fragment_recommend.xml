@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gu_linearLayout_root_vertical">
+
+    <TextView
+        style="@style/gu_textView_center"
+        android:text="其他" />
+
+</LinearLayout>

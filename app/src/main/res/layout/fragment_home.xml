@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gu_linearLayout_root_vertical">
+
+    <TextView
+        android:id="@+id/fragment_home_tv"
+        style="@style/gu_textView_center"
+        android:text="我的位置" />
+
+    <ImageView style="@style/gu_recycler_headline_no_margin_horizontal" />
+
+    <LinearLayout
+        style="@style/gu_linearLayout_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_home_update_tv"
+            style="@style/gu_textView_center"
+            android:layout_weight="1"
+            android:text="点击我获取当前位置并上传"
+            android:textColor="@color/gu_red" />
+
+        <Button
+            android:id="@+id/fragment_home_set_center_bt"
+            style="@style/gu_button_wrap_content"
+            android:text="设置"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <ImageView style="@style/gu_recycler_headline_no_margin_horizontal" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/fragment_home_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true" />
+</LinearLayout>

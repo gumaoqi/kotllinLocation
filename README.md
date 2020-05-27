@@ -1,0 +1,3 @@
+# KotlinBaseProject
+Kotlin的基础工程
+能够快速的使用该工程构建kotlin项目

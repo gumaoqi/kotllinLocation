@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_size_level_5"
+    app:cardCornerRadius="@dimen/margin_size_level_5">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/gu_linearLayout_root_vertical"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/item_location_one_tv"
+            style="@style/gu_textView_center"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:maxLines="1" />
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/item_location_two_tv"
+            style="@style/gu_textView_center"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:maxLines="1" />
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/item_location_three_tv"
+            style="@style/gu_textView_center"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:maxLines="1" />
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/item_location_four_tv"
+            style="@style/gu_textView_center"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:maxLines="2" />
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/item_location_five_tv"
+            style="@style/gu_textView_center"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:maxLines="1" />
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/item_location_six_tv"
+            style="@style/gu_textView_center"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:maxLines="1" />
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/item_location_seven_tv"
+            style="@style/gu_textView_center"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:maxLines="1" />
+
+        <ImageView style="@style/gu_recycler_headline_no_margin_horizontal" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

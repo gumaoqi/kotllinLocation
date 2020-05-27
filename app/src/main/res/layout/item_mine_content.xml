@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_mine_content_root_ll"
+    style="@style/gu_linearLayout_root_vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/gu_linearLayout_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_size_level_10"
+        android:layout_marginBottom="@dimen/margin_size_level_10">
+
+        <ImageView
+            android:id="@+id/item_mine_pic_iv"
+            style="@style/gu_icon" />
+
+        <TextView
+            android:id="@+id/item_mine_tv"
+            style="@style/gu_textView_center" />
+
+        <ImageView style="@style/gu_imageView_weight_horizontal" />
+
+        <ImageView
+            android:id="@+id/item_mine_pic_two_iv"
+            style="@style/gu_icon" />
+    </LinearLayout>
+
+    <ImageView style="@style/gu_recycler_headline_no_margin_horizontal" />
+
+</LinearLayout>

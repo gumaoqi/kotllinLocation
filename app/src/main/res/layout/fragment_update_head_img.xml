@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gu_linearLayout_root_vertical">
+
+    <ImageView style="@style/gu_imageView_weight_vertical" />
+
+    <ImageView
+        android:id="@+id/fragment_update_head_img_iv"
+        style="@style/gu_imageView_head" />
+
+    <ImageView style="@style/gu_imageView_weight_vertical" />
+
+    <LinearLayout
+        style="@style/gu_linearLayout_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView style="@style/gu_imageView_weight_horizontal" />
+
+        <Button
+            android:id="@+id/fragment_update_head_img_one_bt"
+            style="@style/gu_button_wrap_content"
+            android:text="拍照" />
+
+        <ImageView style="@style/gu_imageView_weight_horizontal" />
+
+        <Button
+            android:id="@+id/fragment_update_head_img_two_bt"
+            style="@style/gu_button_wrap_content"
+            android:text="相册" />
+
+        <ImageView style="@style/gu_imageView_weight_horizontal" />
+
+        <Button
+            android:id="@+id/fragment_update_head_img_three_bt"
+            style="@style/gu_button_wrap_content"
+            android:text="上传" />
+
+        <ImageView style="@style/gu_imageView_weight_horizontal" />
+    </LinearLayout>
+
+    <ImageView style="@style/gu_imageView_weight_vertical" />
+</LinearLayout>

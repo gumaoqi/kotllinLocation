@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/gu_linearLayout_root_vertical">
+
+    <ImageView style="@style/gu_recycler_headline_no_margin_horizontal" />
+
+    <ImageView style="@style/gu_imageView_weight_vertical" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/gu_bottom_navigation">
+
+        <LinearLayout
+            android:id="@+id/fragment_gu_bottom_navigation_item_one_ll"
+            style="@style/gu_linearLayout_root_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/fragment_gu_bottom_navigation_icon_one_iv"
+                style="@style/gu_icon" />
+
+            <TextView
+                android:id="@+id/fragment_gu_bottom_navigation_name_one_tv"
+                style="@style/gu_textView_center"
+                android:textColor="@color/gu_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_gu_bottom_navigation_item_two_ll"
+            style="@style/gu_linearLayout_root_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/fragment_gu_bottom_navigation_icon_two_iv"
+                style="@style/gu_icon" />
+
+            <TextView
+                android:id="@+id/fragment_gu_bottom_navigation_name_two_tv"
+                style="@style/gu_textView_center"
+                android:textColor="@color/gu_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_gu_bottom_navigation_item_three_ll"
+            style="@style/gu_linearLayout_root_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/fragment_gu_bottom_navigation_icon_three_iv"
+                style="@style/gu_icon" />
+
+            <TextView
+                android:id="@+id/fragment_gu_bottom_navigation_name_three_tv"
+                style="@style/gu_textView_center"
+                android:textColor="@color/gu_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_gu_bottom_navigation_item_four_ll"
+            style="@style/gu_linearLayout_root_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/fragment_gu_bottom_navigation_icon_four_iv"
+                style="@style/gu_icon" />
+
+            <TextView
+                android:id="@+id/fragment_gu_bottom_navigation_name_four_tv"
+                style="@style/gu_textView_center"
+                android:textColor="@color/gu_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_gu_bottom_navigation_item_five_ll"
+            style="@style/gu_linearLayout_root_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/fragment_gu_bottom_navigation_icon_five_iv"
+                style="@style/gu_icon" />
+
+            <TextView
+                android:id="@+id/fragment_gu_bottom_navigation_name_five_tv"
+                style="@style/gu_textView_center"
+                android:textColor="@color/gu_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView style="@style/gu_imageView_weight_vertical" />
+</LinearLayout>

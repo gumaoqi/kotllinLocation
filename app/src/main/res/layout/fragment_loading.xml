@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gu_linearLayout_root_vertical">
+
+    <TextView
+        android:id="@+id/fragment_loading_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:gravity="right"
+        android:paddingRight="@dimen/margin_size_level_10"
+        android:paddingTop="@dimen/margin_size_level_10"
+        android:textColor="@color/gu_black"
+        android:textSize="@dimen/text_size_level_20" />
+
+</LinearLayout>

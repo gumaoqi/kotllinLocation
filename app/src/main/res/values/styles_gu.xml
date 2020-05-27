@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--LinearLayout 根样式定义-->
+    <style name="gu_linearLayout_root_vertical">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gu_white</item>
+    </style>
+
+    <!--LinearLayout 水平方向样式定义-->
+    <style name="gu_linearLayout_horizontal">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gu_white</item>
+    </style>
+
+    <!--TextView 居中样式定义-->
+    <style name="gu_textView_center">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gu_black</item>
+        <item name="android:textSize">@dimen/text_size_level_14</item><!--14sp-->
+        <item name="android:layout_marginRight">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginTop">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginBottom">@dimen/margin_size_level_5</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--EditText 基本样式定义-->
+    <style name="gu_editText_weight">
+        <item name="android:textSize">@dimen/text_size_level_14</item><!--14sp-->
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/shape_edit</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginRight">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginTop">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginBottom">@dimen/margin_size_level_5</item>
+        <item name="android:paddingLeft">@dimen/margin_size_level_5</item>
+        <item name="android:paddingRight">@dimen/margin_size_level_5</item>
+        <item name="android:paddingTop">@dimen/margin_size_level_5</item>
+        <item name="android:paddingBottom">@dimen/margin_size_level_5</item>
+    </style>
+
+    <!--Spinner 基本样式定义-->
+    <style name="gu_spinner_weight">
+        <item name="android:textSize">@dimen/text_size_level_14</item><!--14sp-->
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/shape_edit</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginRight">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginTop">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginBottom">@dimen/margin_size_level_5</item>
+        <item name="android:paddingLeft">@dimen/margin_size_level_5</item>
+        <item name="android:paddingRight">@dimen/margin_size_level_5</item>
+        <item name="android:paddingTop">@dimen/margin_size_level_5</item>
+        <item name="android:paddingBottom">@dimen/margin_size_level_5</item>
+    </style>
+
+    <!--Button 基本样式定义-->
+    <style name="gu_button_wrap_content">
+        <item name="android:textColor">@color/gu_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginBottom">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginRight">@dimen/margin_size_level_5</item>
+        <item name="android:background">@drawable/selector_blue_button</item>
+    </style>
+
+    <!--ImageView 比重horizontal基本样式定义-->
+    <style name="gu_imageView_weight_horizontal">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--ImageView 比重vertical基本样式定义-->
+    <style name="gu_imageView_weight_vertical">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <!--ImageView 头像基本样式定义-->
+    <style name="gu_imageView_head">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">180dp</item>
+    </style>
+
+    <!--CheckBox 基本样式定义-->
+    <style name="gu_check_box" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_check</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginBottom">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginRight">@dimen/margin_size_level_5</item>
+    </style>
+
+    <!--RecyclerView_headline 水平分割线有空白样式定义-->
+    <style name="gu_recyclerView_headline_margin_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gu_gainsboro</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginRight">@dimen/margin_size_level_5</item>
+    </style>
+
+    <!--RecyclerView_headline 水平分割线无空白样式定义-->
+    <style name="gu_recycler_headline_no_margin_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gu_gainsboro</item>
+    </style>
+
+    <!--gu_recycler_headline 竖直分割线无空白基本样式定义-->
+    <style name="gu_recycler_headline_vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gu_gainsboro</item>
+    </style>
+
+    <!--gu_recycler 基本样式定义-->
+    <style name="gu_recycler">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--ScrollView 基本样式定义-->
+    <style name="gu_scrollview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <!--navigation 基本样式定义-->
+    <style name="gu_bottom_navigation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--icon icon基本样式定义-->
+    <style name="gu_icon">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginRight">@dimen/margin_size_level_5</item>
+        <item name="android:layout_marginBottom">@dimen/margin_size_level_5</item>
+    </style>
+
+
+    <!--隐藏状态栏，整个app的风格-->
+    <style name="gu_no_action_bar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--状态栏的风格-->
+    <style name="gu_action_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@color/gu_royalblue</item>
+    </style>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gu_linearLayout_root_vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/gu_linearLayout_root_vertical">
+
+            <LinearLayout style="@style/gu_linearLayout_horizontal">
+
+                <TextView
+                    style="@style/gu_textView_center"
+                    android:text="我的管理员：" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_c3_et"
+                    style="@style/gu_editText_weight"
+                    android:maxLength="11" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_c3_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="修改" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_update_info_one_ll"
+                style="@style/gu_linearLayout_horizontal">
+
+                <TextView
+                    style="@style/gu_textView_center"
+                    android:text="中心点纬度：" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_c4_et"
+                    style="@style/gu_editText_weight"
+                    android:enabled="false"
+                    android:maxLength="18" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_c4_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="修改"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_update_info_two_ll"
+                style="@style/gu_linearLayout_horizontal">
+
+                <TextView
+                    style="@style/gu_textView_center"
+                    android:text="中心点经度：" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_c5_et"
+                    style="@style/gu_editText_weight"
+                    android:enabled="false"
+                    android:maxLength="18" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_c5_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="修改："
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_update_info_three_ll"
+                style="@style/gu_linearLayout_horizontal">
+
+                <TextView
+                    style="@style/gu_textView_center"
+                    android:text="中心点地址：" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_c6_et"
+                    style="@style/gu_editText_weight"
+                    android:enabled="false"
+                    android:maxLength="118"
+                    android:maxLines="3" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_c6_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="修改"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/gu_linearLayout_horizontal">
+
+                <TextView
+
+                    style="@style/gu_textView_center"
+                    android:text="管理员纬度：" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_c7_et"
+                    style="@style/gu_editText_weight"
+                    android:enabled="false"
+                    android:maxLength="18" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_c7_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="修改"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/gu_linearLayout_horizontal">
+
+                <TextView
+                    style="@style/gu_textView_center"
+                    android:text="管理员经度：" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_c8_et"
+                    style="@style/gu_editText_weight"
+                    android:enabled="false"
+                    android:maxLength="18" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_c8_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="修改"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/gu_linearLayout_horizontal">
+
+                <TextView
+                    style="@style/gu_textView_center"
+                    android:text="管理员位置：" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_c9_et"
+                    style="@style/gu_editText_weight"
+                    android:enabled="false"
+                    android:maxLength="118"
+                    android:maxLines="3" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_c9_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="修改"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/gu_linearLayout_horizontal">
+
+                <TextView
+                    style="@style/gu_textView_center"
+                    android:text="请填写昵称：" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_c10_et"
+                    style="@style/gu_editText_weight"
+                    android:maxLength="18" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_c10_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="修改" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
