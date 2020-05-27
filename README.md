@@ -1,3 +1,2 @@
 # KotlinBaseProject
-Kotlin的基础工程
-能够快速的使用该工程构建kotlin项目
+使用kotlin做的一个简单的定位系统
