@@ -69,6 +69,11 @@ class ActionFragment : BaseFragment() {
         super.setView()
         fragment_action_rv.layoutManager = LinearLayoutManager(GuApplication.context)
         fragment_action_rv.adapter = locationAdapter
+        fragment_action_srl.setOnRefreshListener {
+            intData()
+            setView()
+            fragment_action_srl.isRefreshing = false
+        }
     }
 
     /**

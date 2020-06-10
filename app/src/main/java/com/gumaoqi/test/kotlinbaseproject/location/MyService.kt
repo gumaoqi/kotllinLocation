@@ -1,14 +1,10 @@
 package com.gumaoqi.test.kotlinbaseproject.location
 
 import android.app.*
-import android.content.Context
 import android.content.Intent
-import android.os.Build
 import android.os.Handler
 import android.os.IBinder
-import androidx.core.app.NotificationCompat
 import com.baidu.location.BDLocation
-import com.gumaoqi.test.kotlinbaseproject.LoadingActivity
 import com.gumaoqi.test.kotlinbaseproject.R
 import com.gumaoqi.test.kotlinbaseproject.base.GuApplication
 import com.gumaoqi.test.kotlinbaseproject.base.GuApplication.Companion.lastUploadLocationTime
@@ -16,7 +12,6 @@ import com.gumaoqi.test.kotlinbaseproject.base.GuApplication.Companion.notificat
 import com.gumaoqi.test.kotlinbaseproject.base.GuApplication.Companion.setNotification
 import com.gumaoqi.test.kotlinbaseproject.base.GuApplication.Companion.uploadLocationTime
 import com.gumaoqi.test.kotlinbaseproject.base.HandlerArg
-import com.gumaoqi.test.kotlinbaseproject.base.HandlerArg.Companion.GET_LOCATION
 import com.gumaoqi.test.kotlinbaseproject.base.HandlerArg.Companion.SERVICE_GET_LOCATION
 import com.gumaoqi.test.kotlinbaseproject.base.HandlerArg.Companion.SERVICE_GET_LOCATION_BACK
 import com.gumaoqi.test.kotlinbaseproject.base.HandlerArg.Companion.SERVICE_UPLOAD_LOCATION_BACK
@@ -72,6 +67,7 @@ class MyService : Service() {
                         return@Callback false
                     }
                     lastUploadLocationTime = System.currentTimeMillis()
+                    L.i(TAG, "时间间隔：$uploadLocationTime")
                     setNotification("定位中。。。",
                             "上次定位时间：" + C.longTimeChangeYear(System.currentTimeMillis())
                                     + "\n上次定位位置：" + bd.addrStr

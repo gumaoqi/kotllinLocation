@@ -31,7 +31,7 @@ class GuApplication : Application() {
         const val maxPicSize = 9740516//选中照片最大大小为6m
         const val clickEffectTime = 1000 * 1//点击有效时间，防止重复点击
         const val getLocationTime = (1000 * 60 * 1) as Long//每1分钟获取一次地理位置
-        const val uploadLocationTime = (1000 * 60 * 5) as Long//每5分钟上传一次地理位置
+        const val uploadLocationTime = (1000 * 60 * 30) as Long//每30分钟上传一次地理位置
         var lastUploadLocationTime = 0L//上一次上传位置时间
         var lastClickTime = System.currentTimeMillis()//上一次点击事件
 

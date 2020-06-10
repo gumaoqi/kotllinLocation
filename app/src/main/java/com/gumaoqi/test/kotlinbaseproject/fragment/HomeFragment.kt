@@ -11,7 +11,6 @@ import com.baidu.mapapi.map.MyLocationData
 import com.gumaoqi.test.kotlinbaseproject.R
 import com.gumaoqi.test.kotlinbaseproject.base.BaseFragment
 import com.gumaoqi.test.kotlinbaseproject.base.GuApplication
-import com.gumaoqi.test.kotlinbaseproject.base.GuApplication.Companion.lastUploadLocationTime
 import com.gumaoqi.test.kotlinbaseproject.base.HandlerArg
 import com.gumaoqi.test.kotlinbaseproject.base.HandlerArg.Companion.GET_LOCATION_BACK
 import com.gumaoqi.test.kotlinbaseproject.base.HandlerArg.Companion.SET_CENTER_BACK
