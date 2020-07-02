@@ -93,7 +93,7 @@ class UpdateInfoFragment : BaseFragment() {
         fragment_update_info_c7_et.setText(S.getString("c7"))
         fragment_update_info_c8_et.setText(S.getString("c8"))
         fragment_update_info_c9_et.setText(S.getString("c9"))
-        fragment_update_info_c10_et.setText(S.getString("c11"))
+        fragment_update_info_c10_et.setText(S.getString("c3"))
         fragment_update_info_c3_bt.setOnClickListener {
             value = fragment_update_info_c3_et.text.toString()
             checkInput("c3", value)
@@ -124,13 +124,20 @@ class UpdateInfoFragment : BaseFragment() {
         }
         fragment_update_info_c10_bt.setOnClickListener {
             val value = fragment_update_info_c10_et.text.toString()
-            checkInputNickName("c11", value)
+            checkInputNickName("c3", value)
+        }
+        fragment_update_info_allow_bt.setOnClickListener {
+            addParamUpdateInfo("c4", "允许")
+        }
+        fragment_update_info_no_allow_bt.setOnClickListener {
+            addParamUpdateInfo("c4", "不允许")
         }
         if (S.getString("c10") != "1") {
             fragment_update_info_one_ll.visibility = View.GONE
             fragment_update_info_two_ll.visibility = View.GONE
             fragment_update_info_three_ll.visibility = View.GONE
         }
+        fragment_update_info_allow_tv.text = "查询状态：" + S.getString("c4")
     }
 
     /**
@@ -160,7 +167,7 @@ class UpdateInfoFragment : BaseFragment() {
         paramMap["c8"] = jingdu
         paramMap["c9"] = addr
         paramMap["objectid"] = S.getString("object_id")
-        paramMap["tablename"] = "shop_user"
+        paramMap["tablename"] = "map_user"
         updateInfoByRetrofit(paramMap, gHandler)
     }
 
@@ -170,17 +177,17 @@ class UpdateInfoFragment : BaseFragment() {
             return
         }
 //        addParamIfadmin(value)
-        addParamUpdateNickName(key, value)
+        addParamUpdateInfo(key, value)
     }
 
     /**
      * 添加参数修改个人信息
      */
-    private fun addParamUpdateNickName(key: String, value: String) {
+    private fun addParamUpdateInfo(key: String, value: String) {
         val paramMap = HashMap<String, String>()
         paramMap[key] = value
         paramMap["objectid"] = S.getString("object_id")
-        paramMap["tablename"] = "shop_user"
+        paramMap["tablename"] = "map_user"
         updateInfoByRetrofit(paramMap, gHandler)
     }
 
@@ -230,7 +237,7 @@ class UpdateInfoFragment : BaseFragment() {
         val paramMap = HashMap<String, String>()
         paramMap["c1"] = phone
         paramMap["c10"] = "1"
-        paramMap["tablename"] = "shop_user"
+        paramMap["tablename"] = "map_user"
         loginByRetrofit(paramMap, gHandler)
     }
 

@@ -8,7 +8,9 @@
 
         <LinearLayout style="@style/gu_linearLayout_root_vertical">
 
-            <LinearLayout style="@style/gu_linearLayout_horizontal">
+            <LinearLayout
+                style="@style/gu_linearLayout_horizontal"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/gu_textView_center"
@@ -27,7 +29,8 @@
 
             <LinearLayout
                 android:id="@+id/fragment_update_info_one_ll"
-                style="@style/gu_linearLayout_horizontal">
+                style="@style/gu_linearLayout_horizontal"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/gu_textView_center"
@@ -48,7 +51,8 @@
 
             <LinearLayout
                 android:id="@+id/fragment_update_info_two_ll"
-                style="@style/gu_linearLayout_horizontal">
+                style="@style/gu_linearLayout_horizontal"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/gu_textView_center"
@@ -69,7 +73,8 @@
 
             <LinearLayout
                 android:id="@+id/fragment_update_info_three_ll"
-                style="@style/gu_linearLayout_horizontal">
+                style="@style/gu_linearLayout_horizontal"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/gu_textView_center"
@@ -89,7 +94,9 @@
                     android:visibility="gone" />
             </LinearLayout>
 
-            <LinearLayout style="@style/gu_linearLayout_horizontal">
+            <LinearLayout
+                style="@style/gu_linearLayout_horizontal"
+                android:visibility="gone">
 
                 <TextView
 
@@ -109,7 +116,9 @@
                     android:visibility="gone" />
             </LinearLayout>
 
-            <LinearLayout style="@style/gu_linearLayout_horizontal">
+            <LinearLayout
+                style="@style/gu_linearLayout_horizontal"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/gu_textView_center"
@@ -128,7 +137,9 @@
                     android:visibility="gone" />
             </LinearLayout>
 
-            <LinearLayout style="@style/gu_linearLayout_horizontal">
+            <LinearLayout
+                style="@style/gu_linearLayout_horizontal"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/gu_textView_center"
@@ -163,6 +174,23 @@
                     android:id="@+id/fragment_update_info_c10_bt"
                     style="@style/gu_button_wrap_content"
                     android:text="修改" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/gu_linearLayout_horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_update_info_allow_tv"
+                    style="@style/gu_textView_center" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_allow_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="允许" />
+
+                <Button
+                    android:id="@+id/fragment_update_info_no_allow_bt"
+                    style="@style/gu_button_wrap_content"
+                    android:text="不允许" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

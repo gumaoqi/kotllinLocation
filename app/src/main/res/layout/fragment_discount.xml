@@ -4,12 +4,30 @@
 
     <LinearLayout
         style="@style/gu_linearLayout_horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:visibility="gone">
 
         <Spinner
             android:id="@+id/fragment_dis_sp"
             style="@style/gu_spinner_weight"></Spinner>
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/gu_linearLayout_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/fragment_dis_et"
+            style="@style/gu_editText_weight"
+            android:hint="请输入要位置查询的手机号"></EditText>
+
+        <Button
+            android:id="@+id/fragment_dis_bt"
+            style="@style/gu_button_wrap_content"
+            android:text="查询" />
 
     </LinearLayout>
 

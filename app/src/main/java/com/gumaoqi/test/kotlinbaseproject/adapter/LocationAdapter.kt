@@ -51,6 +51,7 @@ class LocationAdapter : BaseAdapter() {
                 viewHolder.itemLocationFiveTv.text = "时间：${result.createdAt}"
                 viewHolder.itemLocationSixTv.text = "距离：" + result.c6 + "米"
                 viewHolder.itemLocationSevenTv.text = "手机：${result.c7}"
+                viewHolder.itemLocationSixTv.visibility = View.GONE
             }
             is LoadMoreViewHolder -> {
                 viewHolder.itemLoadMoreTv.text = adapterInfo

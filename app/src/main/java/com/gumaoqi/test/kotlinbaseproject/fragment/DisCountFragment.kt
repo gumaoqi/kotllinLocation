@@ -1,5 +1,6 @@
 package com.gumaoqi.test.kotlinbaseproject.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.SpinnerAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.gumaoqi.test.kotlinbaseproject.HomeActivity
 import com.gumaoqi.test.kotlinbaseproject.R
 import com.gumaoqi.test.kotlinbaseproject.R.id.*
 import com.gumaoqi.test.kotlinbaseproject.adapter.LocationAdapter
@@ -106,16 +108,44 @@ class DisCountFragment : BaseFragment() {
                     }
                     fragment_dis_tv.text = "定位总条数为：$number" +
                             "\n有效条数：$locationEffectCount" +
-                            "\n上传位置的手机个数为：$phoneCount" +
-                            "\n最大距离为：$maxInstance 米" +
-                            "\n最大距离定位序号为：$maxTime "
+                            "\n上传位置的手机个数为：$phoneCount" + ""
+//                            "\n最大距离为：$maxInstance 米" +
+//                            "\n最大距离定位序号为：$maxTime "
+                }
+
+                HandlerArg.LOGIN_BACK -> {
+                    val getBean = msg.obj as GetBean
+                    if (getBean.results == null || getBean.results.isEmpty()) {
+                        T.s("不存在该用户，或者该用户无法被查询")
+                    } else {
+                        val result = getBean.results[0]
+                        addParamGetPhoneLocationList(result.c1)
+//                        T.s("登录成功")
+//                        S.setString("login_time", "" + System.currentTimeMillis())
+//                        S.setString("c1", "" + result.c1)
+//                        S.setString("c2", "" + result.c2)
+//                        S.setString("c3", "" + result.c3)
+//                        S.setString("c4", "" + result.c4)
+//                        S.setString("c5", "" + result.c5)
+//                        S.setString("c6", "" + result.c6)
+//                        S.setString("c7", "" + result.c7)
+//                        S.setString("c8", "" + result.c8)
+//                        S.setString("c9", "" + result.c9)
+//                        S.setString("c10", "" + result.c10)
+//                        S.setString("c11", "" + result.c11)
+//                        S.setString("object_id", "" + result.objectId)
+//                        S.setString("create_time", "" + result.createdAt)
+//                        val intent = Intent(GuApplication.context, HomeActivity::class.java)
+//                        startActivity(intent)
+//                        activity?.finish()
+                    }
                 }
             }
             false
         })
         locationAdapter = LocationAdapter()
-        locationAdapter.adapterInfo = "获取手机号中，请稍后"
-        addParamGetUserByAdmin()
+        locationAdapter.adapterInfo = ""
+//        addParamGetUserByAdmin()
     }
 
     override fun setView() {
@@ -137,6 +167,7 @@ class DisCountFragment : BaseFragment() {
 
             }
         }
+        fragment_dis_bt.setOnClickListener { checkInput() }
     }
 
     /**
@@ -146,13 +177,23 @@ class DisCountFragment : BaseFragment() {
         super.onDestroyView()
     }
 
+    private fun checkInput() {
+        val phone = fragment_dis_et.text.toString()
+        if (phone.length != 11) {
+            T.s("请输入11位手机号码")
+            return
+        }
+        addParamLogin(phone)
+//        addParamGetPhoneLocationList(phone)
+    }
+
     /**
      * 添加参数去获取某个管理员的用户
      */
     private fun addParamGetUserByAdmin() {
         val paramMap = HashMap<String, String>()
         paramMap["c3"] = S.getString("c1")
-        paramMap["tablename"] = "shop_user"
+        paramMap["tablename"] = "map_user"
         getUserByAdminByRetrofit(paramMap, gHandler)
     }
 
@@ -226,6 +267,49 @@ class DisCountFragment : BaseFragment() {
 
             override fun onFailure(call: Call<GetBean>, t: Throwable) {
                 L.i(TAG, "获取某个手机号的位置列表接口连接超时,${t.message}")
+                T.s(getString(R.string.gu_net_error_or_server_busy))
+            }
+        })
+    }
+
+    /**
+     * 添加参数去判断当前手机号是否能够被查询
+     */
+    private fun addParamLogin(phone: String) {
+        val paramMap = HashMap<String, String>()
+        paramMap["c1"] = phone
+        paramMap["c4"] = "允许"
+        paramMap["tablename"] = "map_user"
+        loginByRetrofit(paramMap, gHandler)
+    }
+
+    /**
+     * 用retrofit登录
+     */
+    private fun loginByRetrofit(paramMap: HashMap<String, String>, handler: Handler) {
+        Re.serviceName = "f43174e44ad9f6f2/shopGetUser"
+        Re.addSign(paramMap, GuApplication.context)
+        val loginService = Re.getRetrofit()
+                .create(LoginService::class.java)
+        val call = loginService.login(paramMap)
+        L.i(TAG, "登录")
+        call.enqueue(object : Callback<GetBean> {
+            override fun onResponse(call: Call<GetBean>, response: Response<GetBean>?) {
+                if (response?.body() == null) {
+                    L.i(TAG, "登录接口返回为空")
+                    T.s(getString(R.string.gu_net_error_or_server_busy))
+                    return
+                }
+                val getBean = response.body()
+                L.i(TAG, "登录接口返回:$getBean")
+                val message = handler.obtainMessage()
+                message.arg1 = HandlerArg.LOGIN_BACK
+                message.obj = getBean
+                handler.sendMessageDelayed(message, 100)
+            }
+
+            override fun onFailure(call: Call<GetBean>, t: Throwable) {
+                L.i(TAG, "登录接口连接超时,${t.message}")
                 T.s(getString(R.string.gu_net_error_or_server_busy))
             }
         })

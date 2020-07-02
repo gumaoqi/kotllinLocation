@@ -186,7 +186,7 @@ class HomeFragment : BaseFragment() {
         paramMap["c5"] = "" + bd.longitude
         paramMap["c6"] = "" + bd.addrStr
         paramMap["objectid"] = S.getString("object_id")
-        paramMap["tablename"] = "shop_user"
+        paramMap["tablename"] = "map_user"
         setCenterByRetrofit(paramMap, gHandler)
     }
 

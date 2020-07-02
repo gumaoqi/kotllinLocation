@@ -107,10 +107,10 @@ internal class GuBottomNavigationFragment : BaseFragment() {
     private fun setCheckedItem(id: Int) {
         if (id == R.id.fragment_gu_bottom_navigation_item_three_ll ||
                 id == R.id.fragment_gu_bottom_navigation_item_four_ll) {
-            if (S.getString("c10") != "1") {
-                T.s("普通用户不能够执行该操作")
-                return
-            }
+//            if (S.getString("c10") != "1") {
+//                T.s("普通用户不能够执行该操作")
+//                return
+//            }
         }
         clearView()
         for (guBottomNavigationBean in guBottomNavigationBeanList) {

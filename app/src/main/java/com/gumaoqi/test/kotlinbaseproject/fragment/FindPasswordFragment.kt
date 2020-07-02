@@ -175,7 +175,7 @@ class FindPasswordFragment : BaseFragment() {
     private fun addParamIfRegister(phone: String) {
         val paramMap = HashMap<String, String>()
         paramMap["c1"] = phone
-        paramMap["tablename"] = "shop_user"
+        paramMap["tablename"] = "map_user"
         ifRegisterByRetrofit(paramMap, gHandler)
     }
 
@@ -303,7 +303,7 @@ class FindPasswordFragment : BaseFragment() {
         val paramMap = HashMap<String, String>()
         paramMap["c1"] = phone
         paramMap["c2"] = password
-        paramMap["tablename"] = "shop_user"
+        paramMap["tablename"] = "map_user"
         findPasswordByRetrofit(paramMap, gHandler)
     }
 

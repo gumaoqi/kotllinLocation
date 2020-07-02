@@ -118,7 +118,7 @@ class LoginFragment : BaseFragment() {
         val paramMap = HashMap<String, String>()
         paramMap["c1"] = phone
         paramMap["c2"] = password
-        paramMap["tablename"] = "shop_user"
+        paramMap["tablename"] = "map_user"
         loginByRetrofit(paramMap, gHandler)
     }
 
